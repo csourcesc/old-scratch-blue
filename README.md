@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## Bring back the first Scratch 2 blue.
 
-You can use the [editor on GitHub](https://github.com/csourcesc/old-scratch-blue/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+I don't support the the new blue on Scratch. It is too "flashy".  
+Maybe you do too ?  
+Here's the userstyle made for you!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Installing
+1. Install a userstyle manager ([Stylus](https://add0n.com/stylus.html) is the best for privacy)
+2. Click here, then install the style!
+3. You're done! Enjoy the first Scratch 2 blue.
+4. Something not in the old blue ? [File a feature request](https://github.com/csourcesc/old-scratch-blue/issues/new).
 
-### Markdown
+### License
+Available under the [MIT license](https://github.com/csourcesc/old-scratch-blue/blob/master/LICENSE).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/csourcesc/old-scratch-blue/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**Made with <3 by CatSource**
