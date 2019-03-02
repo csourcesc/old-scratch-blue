@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           Old Scratch Blue
-@namespace      csourcesc.github.io
-@version        0.3.2
+@namespace      csourcesc.github.io/old-scratch-blue
+@version        0.3.3
 @description    Change the Scratch interface to use the first Scratch blue.
 @author         CatSource
 ==/UserStyle== */
 
 @-moz-document domain("scratch.mit.edu") {
-  #navigation, .title-banner.mod-messages, .title-banner.mod-blue-bg, .intro-banner .intro-container, .parents .title-banner.masthead, .dropdown, .dropdown.with-arrow:before, .button, .ttt-tile-tag, .menu-bar_menu-bar_JcuHF, .modal_header_1h7ps, .tag-button_tag-button_nBLRM, .action-menu_button_1qbot, .sprite-selector-item_is-selected_24tQj .sprite-selector-item_sprite-info_-I0i_, .crash-message_crash-wrapper_25B61, .gui_extension-button-container_b4rCs, .tool-select-base_mod-tool-select_1iD-h.tool-select-base_is-selected_3x4kL, .paint-editor_bitmap-button_keW7B, .outer .title-banner.masthead, .menu_menu_3k7QT, .subactions .action-buttons .action-button, .record-modal_button-row_1hdGe button.record-modal_ok-button_3pudV, .studio-status-icon-unselected, .addToStudio-modal-header {
+  #navigation, .title-banner.mod-messages, .title-banner.mod-blue-bg, .intro-banner .intro-container, .parents .title-banner.masthead, .dropdown, .dropdown.with-arrow:before, .button, .ttt-tile-tag, .menu-bar_menu-bar_JcuHF, .modal_header_1h7ps, .tag-button_tag-button_nBLRM, .action-menu_button_1qbot, .sprite-selector-item_is-selected_24tQj .sprite-selector-item_sprite-info_-I0i_, .loader_background_2DPrW, .crash-message_crash-wrapper_25B61, .question_question-submit-button_3nYah, .gui_extension-button-container_b4rCs, .tool-select-base_mod-tool-select_1iD-h.tool-select-base_is-selected_3x4kL, .paint-editor_bitmap-button_keW7B, .outer .title-banner.masthead, .menu_menu_3k7QT, .subactions .action-buttons .action-button, .record-modal_button-row_1hdGe button.record-modal_ok-button_3pudV, .studio-status-icon-unselected, .addToStudio-modal-header {
     background-color: #0f8bc0;
   }
   .button.white.mod-ttt-item, .sprite-selector-item_sprite-selector-item_kQm-i.sprite-selector-item_is-selected_24tQj, .sprite-selector-item_sprite-selector-item_kQm-i:hover, .gui_extension-button-container_b4rCs, .library-item_library-item_1DcMO:hover, .input_input-form_l9eYg:focus, .input_input-form_l9eYg:hover, .sprite-info_radio-first_3xgJB:focus, .sprite-info_radio-last_3Ps65:focus, .inplace-textarea:focus, .inplace-input:focus {
