@@ -4,6 +4,8 @@ I don't support the the new blue on Scratch. It is too "flashy".
 Maybe you do too ?  
 Here's the userstyle made for you!
 
+[View changelog](http://oldscratchblue.releasepage.co/)
+
 ### Installing
 1. Install a userstyle manager ([Stylus](https://add0n.com/stylus.html) is the best for privacy)
 2. Click [here](https://github.com/csourcesc/old-scratch-blue/raw/master/old-scratch-blue.user.css), then install the style!
