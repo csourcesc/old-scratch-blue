@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.button.primary {
+    background-color: var(--links);
+    color: white;
+}
