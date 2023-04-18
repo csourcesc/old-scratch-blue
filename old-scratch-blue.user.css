@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Old Scratch Blue
 @namespace      csourcesc.github.io/old-scratch-blue
-@version        0.4.0
+@version        0.4.1
 @description    Change the Scratch interface to use the first Scratch blue.
 @author         CatSource
 ==/UserStyle== */
@@ -23,8 +23,13 @@
   
   .dropdown, .dropdown.with-arrow:before,             /* Some dropdowns */
   
-  .studio-status-icon-unselected,                     /* Add to studio modal */
+  .studio-tab-nav .active>li,                         /* Studio tabs */
+  .studio-info .studio-info-footer-report button,     /* Studio report button */
+    
+  .studio-status-icon-unselected,                     /* Add to studio project page modal */
   .addToStudio-modal-header,
+    
+   .social-modal-header,                              /* "Copy link" project page modal
   
   .loader_background_2DPrW,                           /* Project loading/crash screen */
   .crash-message_crash-wrapper_25B61,
@@ -55,7 +60,10 @@
     background-color: #0f8bc0;
   }
   
-  .inplace-textarea:focus,                            /* Editor text inputs/areas */
+    
+  .social-form:focus,                                 /* "Copy link" modal */
+  
+  .inplace-textarea:focus,                            /* Editor/project comments text inputs */
   .inplace-input:focus,
   
   .button.white.mod-ttt-item,
@@ -75,6 +83,7 @@
     border-color: #0f8bc0; 
   }
   
+  .modal-content a,                                   /* Links in modals (e.g. "Copy link" modal)*/
   #view a,                                            /* Links in main content and footer */
   #footer a,
   
