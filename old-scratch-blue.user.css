@@ -1,12 +1,17 @@
 /* ==UserStyle==
 @name           Old Scratch Blue
 @namespace      csourcesc.github.io/old-scratch-blue
-@version        0.4.1
+@version        0.5.0
 @description    Change the Scratch interface to use the first Scratch blue.
 @author         CatSource
 ==/UserStyle== */
 
 @-moz-document domain("scratch.mit.edu") {
+  html, body                                          /* Visible early in page load */
+  {
+    background-color: #fcfcfc;                      /* not old blue but even better; same as default #view */
+  }
+  
   #navigation,                                        /* Top navigation */
   
   .title-banner.mod-messages,                         /* Title banners */
@@ -27,39 +32,42 @@
   .studio-info .studio-info-footer-report button,     /* Studio report button */
     
   .studio-status-icon-unselected,                     /* Add to studio project page modal */
-  .addToStudio-modal-header,
-    
-   .social-modal-header,                              /* "Copy link" project page modal
+      
+  [class^="loader_background_"],                      /* Project loading/crash screen */
+  .crash-message_crash-wrapper_25B61,                 /* FIXME */
   
-  .loader_background_2DPrW,                           /* Project loading/crash screen */
-  .crash-message_crash-wrapper_25B61,
+  [class^="question_question-submit-button_"],        /* In-project question prompt */
   
-  .question_question-submit-button_3nYah,             /* In-project question prompt */
+  [class*=" menu-bar_menu-bar_"],                     /* Editor menu bar */
   
-  .menu-bar_menu-bar_JcuHF,                           /* Editor menu bar */
+  [class^="modal_header_"],                           /* Editor modal header */
   
-  .modal_header_1h7ps,                                /* Editor modal header */
+  [class*=" sprite-selector-item_is-selected_"] [class^="sprite-selector-item_sprite-info_"],  /* Sprites/costumes/sounds names in their lists */
   
-  .sprite-selector-item_is-selected_24tQj .sprite-selector-item_sprite-info_-I0i_,  /* Sprites/costumes/sounds names in their lists */
+  [class^="delete-button_delete-button-visible_"],    /* Delete sprite/costume/sound button */
   
-  .action-menu_button_1qbot,                          /* Action menu (add sprite/background/sound) */
+  [class^="action-menu_button_"],                     /* Action menu (add sprite/background/sound) */
   
-  .gui_extension-button-container_b4rCs,              /* Add extension button */
+  [class^="gui_extension-button-container_"],         /* Add extension button */
   
-  .tag-button_tag-button_nBLRM,                       /* Tags in editor sprite library/sound library */
+  [class*=" tag-button_tag-button_"],                 /* Tags in editor sprite library/sound library */
   
-  .tool-select-base_mod-tool-select_1iD-h.tool-select-base_is-selected_3x4kL,       /* Costume editor tools */
+  [class*=" tool-select-base_mod-tool-select_"][class *=" tool-select-base_is-selected_"],
+                                                      /* Costume editor tools */
   
-  .paint-editor_bitmap-button_keW7B,                  /* Costume editor switch to bitmap/vector button */
+  [class*=" paint-editor_bitmap-button_"],            /* Costume editor switch to bitmap/vector button */
   
-  .menu_menu_3k7QT,                                   /* Not sure what these are */
-  .ttt-tile-tag,
-  
-  .record-modal_button-row_1hdGe button.record-modal_ok-button_3pudV                /* Record sound modal primary button */
+  [class^="record-modal_button-row_"] button[class^="record-modal_ok-button_"]
+                                                      /* Record sound modal primary button */
   {
     background-color: #0f8bc0;
   }
   
+  .modal-header                                       /* project page modals: add to studio, copy link, Scratch Addons discard comment */
+  {
+    background-color: #0f8bc0 !important;
+  }
+
     
   .social-form:focus,                                 /* "Copy link" modal */
   
@@ -68,19 +76,32 @@
   
   .button.white.mod-ttt-item,
   
-  .sprite-selector-item_sprite-selector-item_kQm-i.sprite-selector-item_is-selected_24tQj, /* Sprites/costumes/sounds in their lists */
-  .sprite-selector-item_sprite-selector-item_kQm-i:hover,
+  [class*=" sprite-selector-item_sprite-selector-item_"][class*=" sprite-selector-item_is-selected_"],
+  [class*=" sprite-selector-item_sprite-selector-item_"]:hover,/* Sprites/costumes/sounds in their lists */
   
-  .sprite-info_radio-first_3xgJB:focus,               /* Sprite visibility button */
-  .sprite-info_radio-last_3Ps65:focus,
+  [class^="toggle-buttons_button_"]:focus::before,    /* Sprite visibility button */
   
-  .gui_extension-button-container_b4rCs,              /* Add extension button */
+  [class^="gui_extension-button-container_"],         /* Add extension button */
   
-  .library-item_library-item_1DcMO:hover,             /* Sprite/extensions/sounds library */
-  .input_input-form_l9eYg:focus,
-  .input_input-form_l9eYg:hover
+  [class^="library-item_library-item_"]:hover,        /* Sprite/extensions/sounds library */
+  
+  [class^="input_input-form_"]:focus,                 /* In-project question prompt */
+  [class^="input_input-form_"]:hover
   {
     border-color: #0f8bc0; 
+  }
+  
+  .inplace-textarea:focus,                            /* Project page textareas */
+  div > [class^="input_input-form_"]:focus,           /* In-project question prompt */
+                                                      /* (direct child of div cuz their css rule uses that) */
+  [class^="input_input-form_"]:focus,                 /* sprite properties text boxes */
+  [class*=" sprite-selector-item_sprite-selector-item_"][class*=" sprite-selector-item_is-selected_"],
+                                                      /* Sprites/costumes/sounds in their lists */
+  [class^="delete-button_delete-button-visible_"],    /* Delete sprite/costume/sound button */
+
+  [class*=" action-menu_main-button_"]               /* add sprite/background/sound */
+  {
+    box-shadow: 0 0 0 4px #0f8bc040;
   }
   
   .modal-content a,                                   /* Links in modals (e.g. "Copy link" modal)*/
@@ -95,9 +116,11 @@
   
   .menu-bar_feedback-link_1BnAR,                      /* OLD - editor feedback button */
   
-  .gui_tab_27Unf.gui_is-selected_sHAiu,               /* Editor selected tabs */
+  [class*="gui_tab_"][class*="gui_is-selected_"],     /* Editor selected tabs */
   
-  .record-modal_button-row_1hdGe button               /* Record modal white button */
+  [class^="record-modal_button-row_"] button[class^="record-modal_rerecord-button_"],
+                                                      /* Record modal white button */
+  [class^="record-modal_playing-text_"]                  /* Record modal play button text */
   {
     color: #0f8bc0 !important;
   }
